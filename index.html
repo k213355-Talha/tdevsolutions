@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>T-Dev Solutions</title>
+    <style>
+        /* Add your custom styles here */
+        .custom-header {
+            background-color: #ff9900;
+        }
+
+        /* Override Tailwind CSS classes */
+        .bg-gray-900 {
+            background-color: #333;
+        }
+
+        * {box-sizing:border-box}
+    </style>
+
+
+
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 2000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Caption text 
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    */
+    /* Number text (1/3 etc) 
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    */
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #5186cc;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+
+   
+
+    </style>
+
+
+<style>
+   .top-left h1{
+  position: absolute;
+  top: 1%;
+  left: 35%;
+  font-size: 50px;
+  font-weight:bolder;
+  color: #000000;
+}
+
+.top-left-head {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 30px;
+  font-weight:bold;
+  color: #06046e;
+}
+
+.top-left-desc {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 20px;
+  font-weight:bold;
+  color: #252d49;
+}
+
+.top-left-button {
+    position: absolute;
+    top: 50%;
+  left: 16px;
+ }
+
+ .bottom-dots {
+    position: absolute;
+  left: 50%;
+  bottom: 16px;
+ }
+
+
+ .divider-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+</style>
+
+
+    
+</head>
+<body>
+
+    <!-- Header Starts -->
+
+   <header class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a class="mr-5 hover:text-white" href="#">Home</a>
+      <a class="mr-5 hover:text-white" href="aboutUs.html">About</a>
+      <a class="mr-5 hover:text-white" href="Services.html">Services</a>
+      <a class="mr-5 hover:text-white" href="ContactUs.html">Contact</a>
+      
+    </nav>
+    <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+      <img src="images/logo.png" style="height: 30%; width: 30%;">
+    </a>
+    <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+      <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"><a href="https://wa.me/c/923063768035" target="_blank">Order Now</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!--Header Ends-->
+<!--Hero Starts-->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="images/b1.jpg" style="width: 100%; max-height: 700px">
+      <div class="top-left"><h1>T-Dev Solutions</h1></div>
+      <div class="top-left-head"><h1><br><br><br><br>Welcome to T-Dev Solutions<br></h1></div>
+    <div class="top-left-desc"><h1><br><br><br><br><br><br><br><br>We transform your app visions<br> into breathtaking digital realities.<br> As a trailblazing app developer<br> software house, we're dedicated <br>to crafting innovative,<br> pixel-perfect solutions.</h1></div>
+    
+    <div class="top-left-button">
+        <br><br>
+        <br><br>
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Order Now</button></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="images/b2.jpg" style="width: 100%; max-height: 700px">
+      <div class="top-left"><h1>T-Dev Solutions</style></h1></div>
+      <div class="top-left-head"><h1><br><br><br><br>Our Vision<br></h1></div>
+      <div class="top-left-desc"><h1><br><br><br><br><br><br><br><br>From iOS to Android, and everything<br> in between, we craft apps that<br> seamlessly transcend platforms,<br> ensuring your users receive an<br> exceptional experience no matter<br> their device. Our talented<br> team of developers <br>thrives on pushing boundaries.</h1></div>
+  
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/b3.jpg" style="width: 100%; max-height: 700px">
+      <div class="top-left"><h1>T-Dev Solutions</style></h1></div>
+      <div class="top-left-head"><h1><br><br><br><br>Scalable Solution<br></h1></div>
+      <div class="top-left-desc"><h1><br><br><br><br><br><br><br><br>We understand the importance <br>of speed to market.Our agile<br> methodologies ensure swift <br> development without <br>compromising the quality<br> that sets us apart.</h1></div>
+  
+    </div>
+
+    
+      <div class="bottom-dots">
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        </div>
+    </div>
+
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+    </script>
+<!--Hero Ends-->
+<!--Gallery Starts-->
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Our Projects</h1>
+        <div class="divider-container">
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base"><br><br>Take a peek at what we've brought to life - a collection of projects that embody creativity and functionality. See how imagination meets execution in our portfolio, where concepts evolve into fully functional and captivating applications.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/bms.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">C++ & Python</h2>
+              <h1 class="title-font text-lg font-medium text-white mb-3">Bank Management System</h1>
+              <p class="leading-relaxed">Efficiently manage banking operations with our C++ based Bank Management System, utilizing the power of object-oriented programming for seamless functionality.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/crs.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">C++ and OOP</h2>
+              <h1 class="title-font text-lg font-medium text-white mb-3">Car Rental System</h1>
+              <p class="leading-relaxed">Experience streamlined car rentals through our C++ based system, engineered using object-oriented programming for a user-friendly and efficient interface.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/qg.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">C</h2>
+              <h1 class="title-font text-lg font-medium text-white mb-3">Quize Game</h1>
+              <p class="leading-relaxed">Engage and challenge your intellect with our interactive Quiz Game, crafted using the power of C language. Experience knowledge and excitement with our C-programmed Quiz Game.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/pd.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">C++ and Data Structures</h2>
+              <h1 class="title-font text-lg font-medium text-white mb-3">Plagiarism Detetector</h1>
+              <p class="leading-relaxed">Elevate content integrity using our C++ based Plagiarism Detector, fortified by advanced data structures. Uncover originality with precision and efficiency in our plagiarism detection system.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/ssv.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">C and Multithreading</h2>
+              <h1 class="title-font text-lg font-medium text-white mb-3">Sudoku Solution Validator</h1>
+              <p class="leading-relaxed">Ensure Sudoku solutions with ultimate accuracy using our multithreaded validator, meticulously crafted in the power of C. Elevate Sudoku-solving confidence through our C-based multithreaded solution validator.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/gc.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">Flutter and Dart</h2>
+              <h1 class="title-font text-lg font-medium text-white mb-3">CGPA Calculator</h1>
+              <p class="leading-relaxed">Navigate academic success effortlessly with our CGPA Calculator app, meticulously crafted using the Flutter framework. Efficiency and stability is more powerfull due to Flutter and dart mixture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Gallery Ends-->
+
+  <!--Steps Starts-->
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-white">Our Work Process</h1>
+        <div class="divider-container">
+            <span class="gsap-reveal"><br><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
+        <h2 class="text-xs text-indigo-400 tracking-widest font-medium title-font mb-1"><br><br>Innovate, Collaborate, Elevate</h2>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M100 3H3C1.9 3 1.01 3.9 1.01 5L1 19c0 1.1 .9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1 -.9-2 -2-2zm0 2l-8 5 -8-5h16zm0 4.98L12 13 3 7h18zM3 19V9l9 6 9-6v10H3z"/>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg title-font font-medium">Invitation</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">You are invited on a meeting with one of our company representative to deal in your area of concern.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg title-font font-medium">Contract</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">After everything has been negotiated on the meeting you are asked to sign an E-Contract according to the terms.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg title-font font-medium">Deliverance</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Last step involves the team to deliver you the product within the time span decided in the meeting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--Steps Ends-->
+
+<!--Inovating New Starts-->
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Innovating New</h1>
+        <div class="divider-container">
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
+        <h2 class="text-xs text-indigo-400 tracking-widest font-medium title-font mb-1"><br><br>Embarking on Exciting New Projects at T-Dev Solutions. </h2>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto"><br>We're dedicatedly crafting a cutting-edge Flutter project, fueled by innovation and propelled by our hardworking team's commitment. With a focus on seamless UI/UX and robust functionality, this project is poised to redefine user experiences and set new standards in app development.</p>
+      </div>
+      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium text-white">Consistent UI Design</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium text-white">Separation of Concerns</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium text-white">Responsive Design</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium text-white">Code Reusability</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium text-white">Performance Optimization</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium text-white">Regular Testing</span>
+          </div>
+        </div>
+      </div>
+      <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="https://wa.me/c/923063768035" target="_blank"">Order Now</a></button>
+    </div>
+  </section>
+
+  <!--Inovating New Ends-->
+
+  <!--Services Starts-->
+
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">All Services In Place</h1>
+            <div class="divider-container">
+                <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+              </div>
+          </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">Assignment Based Tasks</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3">All Language Tasks</h1>
+            <p class="leading-relaxed mb-3">Tasks can be accomplished using a variety of programming languages, each suited to specific purposes, from web development to data analysis and beyond. </p>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">DSA And OS Tasks</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3">Linux and Data Structure</h1>
+            <p class="leading-relaxed mb-3">Empowered with expertise in Data Structures and Operating Systems, our team excels in tackling complex challenges and optimizing system performance.</p>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">APP Development</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3">Flutter APP Development</h1>
+            <p class="leading-relaxed mb-3">Effortlessly navigating the Flutter framework, our skilled team crafts efficient and captivating apps that seamlessly blend innovative design with robust functionality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Services Ends-->
+
+  <!--Testimonial Starts-->
+
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Founder Message</h1>
+            <div class="divider-container">
+                <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+              </div>
+          </div>
+            <div class="divider-container">
+              <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10" src="images/fpic.jpg">
+          </div>
+      <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-500 mb-8" viewBox="0 0 975.036 975.036">
+          <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+        </svg>
+        <p class="leading-relaxed text-lg">Welcome to T-Dev Solutions, where innovation meets implementation. Our journey is defined by the dedication and expertise of our exceptional team, whose commitment drives us to transform ideas into impactful software solutions. Together, we're shaping the future of technology with unwavering passion and boundless creativity.</p>
+        <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+        <h2 class="text-white font-medium title-font tracking-wider text-sm">TALHA SHAHID</h2>
+        <p class="text-gray-500">Senior Flutter App Developer</p>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center"></div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!--Testimonial Ends-->
+<!--Footer Starts-->
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="divider-container">
+        <img src="images/logo.png" style="height: 10%; width: 10%;">
+        <h1 class="text-lg md:text-xl lg:text-2xl text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">T-Dev Solutions</h1>
+    </div>
+<br>
+    <div class="divider-container">
+        <a class="text-gray-400" href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400" href="https://www.instagram.com/talha_.arain/" target="_blank">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400" href="https://www.linkedin.com/in/talha-shahid-02154323a/" target="_blank">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-10 h-10" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </div>
+
+    <div class="divider-container">
+        <p class="text-base md:text-lg text-gray-600 sm:ml-4 sm:pl-4">
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script> All rights reserved | Powered by T-Dev Solutions
+        </p>
+        
+      <br><br><br><br><br><br>
+    </div>
+  </footer>
+  
+  <!--Footer Ends-->
+</body>
+</html>

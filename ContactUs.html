@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>T-Dev Solutions</title>
+    <style>
+        /* Add your custom styles here */
+        .custom-header {
+            background-color: #ff9900;
+        }
+
+        /* Override Tailwind CSS classes */
+        .bg-gray-900 {
+            background-color: #333;
+        }
+
+        * {box-sizing:border-box}
+    </style>
+
+<style>
+    .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.divider-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   <style>
+    /* styles.css */
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-item {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+  color: #fff;
+}
+
+.contact-item h3 {
+  margin-bottom: 5px;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+   </style>
+
+
+</head>
+<body>
+<!-- Header Starts -->
+
+<header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        
+
+        <div class="top-left">
+            <br>
+            <a class="mr-5 hover:text-white" href="index.html">Home</a>
+            <a class="mr-5 hover:text-white" href="aboutUs.html">About</a>
+            <a class="mr-5 hover:text-white" href="Services.html">Services</a>
+            <a class="mr-5 hover:text-white" href="#">Contact</a>
+    </div>
+      </nav>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+        <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"><a href="https://wa.me/c/923063768035" target="_blank">Order Now</a>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+        <br><br>
+</header>
+  
+  <!--Header Ends-->
+
+  <!--Contact Row Starts-->
+    
+
+
+
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="divider-container">
+        <img src="images/logo.png" style="height: 10%; width: 10%;">
+        <h1 class="sm:pl-4 sm:border-l-2  ">CONTACT</h1>
+    </div>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Details</h1>
+        <div class="divider-container">
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-item">
+          <h3><i class="fas fa-map-marker-alt"></i> Address:</h3>
+          <p>123 Main Street<br>City, Country</p>
+        </div>
+        <div class="contact-item">
+          <h3><i class="fas fa-envelope"></i> Email:</h3>
+          <p>contact.tdevsolutions@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <h3><i class="fas fa-phone"></i> Phone:</h3>
+          <p>+92 306 3768035</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Contact Row Ends-->
+
+<!--FeedBack Form Starts-->
+
+<section class="text-gray-400 bg-gray-900 body-font relative">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">FeedBack</h1>
+        <div class="divider-container">
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base"><br>Feel Free to send us your meaningfull FeedBack!</p>
+      </div>
+      <form action="https://formspree.io/f/myyqebev" method="POST">
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+              <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+              <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+          </div>
+          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center"></div>
+            
+        </div>
+      </div>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        var formData = new FormData(this);
+
+        fetch('process_form.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('responseMessage').textContent = data;
+        });
+    });
+</script>
+
+
+<!--FeedBack Form Ends-->
+
+
+
+<!--footer starts-->
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="divider-container">
+        <img src="images/logo.png" style="height: 10%; width: 10%;">
+        <h1 class="text-lg md:text-xl lg:text-2xl text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">T-Dev Solutions</h1>
+    </div>
+<br>
+    <div class="divider-container">
+        <a class="text-gray-400" href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400" href="https://www.instagram.com/talha_.arain/" target="_blank">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400" href="https://www.linkedin.com/in/talha-shahid-02154323a/" target="_blank">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-10 h-10" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </div>
+
+    <div class="divider-container">
+        <p class="text-base md:text-lg text-gray-600 sm:ml-4 sm:pl-4">
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script> All rights reserved | Powered by T-Dev Solutions
+        </p>
+        
+      <br><br><br><br><br><br>
+    </div>
+  </footer>
+<!--footer ends-->
+  
+
+</body>
+</html>
