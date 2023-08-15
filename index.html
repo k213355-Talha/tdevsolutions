@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <title>T-Dev Solutions</title>
     <style>
@@ -35,27 +34,6 @@
       position: relative;
       margin: auto;
     }
-    
-    /* Caption text 
-    .text {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
-    }
-    */
-    /* Number text (1/3 etc) 
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    */
     /* The dots/bullets/indicators */
     .dot {
       height: 15px;
@@ -104,8 +82,8 @@
 
 .top-left-head {
   position: absolute;
-  top: 8px;
-  left: 16px;
+  top: 20%;
+  left: 1%;
   font-size: 30px;
   font-weight:bold;
   color: #06046e;
@@ -113,8 +91,8 @@
 
 .top-left-desc {
   position: absolute;
-  top: 8px;
-  left: 16px;
+  top: 30%;
+  left: 1%;
   font-size: 20px;
   font-weight:bold;
   color: #252d49;
@@ -122,8 +100,8 @@
 
 .top-left-button {
     position: absolute;
-    top: 50%;
-  left: 16px;
+    top: 60%;
+  left: 1%;
  }
 
  .bottom-dots {
@@ -134,10 +112,12 @@
 
 
  .divider-container {
-  display: flex;
+  display:flex;
   justify-content: center; /* Horizontally center the content */
   align-items: center; /* Vertically center the content */
 }
+
+
 
 </style>
 
@@ -148,25 +128,35 @@
 
     <!-- Header Starts -->
 
-   <header class="text-gray-400 bg-gray-900 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-        <a class="mr-5 hover:text-white" href="#">Home</a>
-      <a class="mr-5 hover:text-white" href="aboutUs.html">About</a>
-      <a class="mr-5 hover:text-white" href="Services.html">Services</a>
-      <a class="mr-5 hover:text-white" href="ContactUs.html">Contact</a>
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <nav class="flex lg:w-2/5 lg:justify-center flex-wrap items-center text-base md:ml-auto">
+          <a class="mr-5 hover:text-white" href="#">Home</a>
+          <a class="mr-5 hover:text-white" href="aboutUs.html">About</a>
+          <a class="mr-5 hover:text-white" href="Services.html">Services</a>
+          <a class="mr-5 hover:text-white" href="ContactUs.html">Contact</a>
+      </nav>
       
-    </nav>
-    <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-      <img src="images/logo.png" style="height: 30%; width: 30%;">
-    </a>
-    <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-      <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"><a href="https://wa.me/c/923063768035" target="_blank">Order Now</a>
+    <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0" href="#">
+      <div class="flex items-center">
+        <img src="images/logo.png" class="h-20 sm:h-10 lg:h-20 w-30 sm:w-20" alt="Logo">
+        <span class="mx-2 text-gray-400">
+              <span class="h-10 w-0.5 inline-block align-middle bg-gray-400"></span>
+          </span>
+          <span class="ml-2 text-xl text-gray-400">HOME</span>
+      </div>
+  </a>
+  
+  
+  <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+    <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+        <a href="https://wa.me/c/923063768035" target="_blank">Order Now</a>
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
-      </button>
-    </div>
+    </button>
+</div>
+
   </div>
 </header>
 
@@ -174,33 +164,45 @@
 <!--Hero Starts-->
 <div class="slideshow-container">
 
-    <div class="mySlides fade">
-      <img src="images/b1.jpg" style="width: 100%; max-height: 700px">
-      <div class="top-left"><h1>T-Dev Solutions</h1></div>
-      <div class="top-left-head"><h1><br><br><br><br>Welcome to T-Dev Solutions<br></h1></div>
-    <div class="top-left-desc"><h1><br><br><br><br><br><br><br><br>We transform your app visions<br> into breathtaking digital realities.<br> As a trailblazing app developer<br> software house, we're dedicated <br>to crafting innovative,<br> pixel-perfect solutions.</h1></div>
-    
-    <div class="top-left-button">
-        <br><br>
-        <br><br>
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Order Now</button></div>
+    <div class="mySlides relative">
+      
+      <img class="w-16 md:w-32 lg:w-48" src="images/b1.jpg" style="width: 100%;">
+      <div class="top-left-head">
+        <h1 class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl font-bold">Welcome to T-Dev Solutions</h1>
     </div>
+          <div class="top-left-desc"><p class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl">We transform your app visions<br> into breathtaking digital realities.<br> As a trailblazing app developer<br> software house, we're dedicated <br>to crafting innovative,<br> pixel-perfect solutions.<br></p>
+    </div>
+  </div>
     
     <div class="mySlides fade">
       <img src="images/b2.jpg" style="width: 100%; max-height: 700px">
-      <div class="top-left"><h1>T-Dev Solutions</style></h1></div>
-      <div class="top-left-head"><h1><br><br><br><br>Our Vision<br></h1></div>
-      <div class="top-left-desc"><h1><br><br><br><br><br><br><br><br>From iOS to Android, and everything<br> in between, we craft apps that<br> seamlessly transcend platforms,<br> ensuring your users receive an<br> exceptional experience no matter<br> their device. Our talented<br> team of developers <br>thrives on pushing boundaries.</h1></div>
+      <div class="top-left-head"><h1 class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl">Our Vision</h1></div>
+      <div class="top-left-desc"><p class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl">From iOS to Android, and everything<br> in between, we craft apps that<br> seamlessly transcend platforms,<br> ensuring your users receive an<br> exceptional experience no matter<br> their device. Our talented<br> team of developers <br>thrives on pushing boundaries.</p></div>
   
     </div>
 
     <div class="mySlides fade">
       <img src="images/b3.jpg" style="width: 100%; max-height: 700px">
-      <div class="top-left"><h1>T-Dev Solutions</style></h1></div>
-      <div class="top-left-head"><h1><br><br><br><br>Scalable Solution<br></h1></div>
-      <div class="top-left-desc"><h1><br><br><br><br><br><br><br><br>We understand the importance <br>of speed to market.Our agile<br> methodologies ensure swift <br> development without <br>compromising the quality<br> that sets us apart.</h1></div>
+      <div class="top-left-head"><h1 class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl">Scalable Solution</h1></div>
+      <div class="top-left-desc"><p class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl">We understand the importance <br>of speed to market.Our agile<br> methodologies ensure swift <br> development without <br>compromising the quality<br> that sets us apart.</p></div>
   
     </div>
+
+<div class="mySlides relative">
+  <img src="images/order now.jpg" style="width: 100%; max-height: 800px">
+
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+      <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold">
+          Get Your Dream App
+      </h1>
+      <button class="bg-blue-500 text-white font-semibold py-2 px-4 rounded mt-2 sm:mt-4">
+        <a href="https://wa.me/c/923063768035" target="_blank">
+          Order Now!</a>
+      </button>
+  </div>
+</div>
+
+
 
     
       <div class="bottom-dots">
@@ -208,6 +210,7 @@
           <span class="dot"></span> 
           <span class="dot"></span> 
           <span class="dot"></span> 
+          <span class="dot"></span>
         </div>
         </div>
     </div>
@@ -232,7 +235,7 @@
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 5000); // Change image every 2 seconds
+      setTimeout(showSlides, 5000); // Change image every 10 seconds
     }
     </script>
 <!--Hero Ends-->
@@ -253,7 +256,7 @@
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">C++ & Python</h2>
               <h1 class="title-font text-lg font-medium text-white mb-3">Bank Management System</h1>
-              <p class="leading-relaxed">Efficiently manage banking operations with our C++ based Bank Management System, utilizing the power of object-oriented programming for seamless functionality.</p>
+              <p class="leading-relaxed">Efficiently manage banking operations with our C++ based Bank Management System, utilizing the power of object-oriented programming for seamless functionality. Get your order now!</p>
             </div>
           </div>
         </div>
@@ -263,7 +266,7 @@
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">C++ and OOP</h2>
               <h1 class="title-font text-lg font-medium text-white mb-3">Car Rental System</h1>
-              <p class="leading-relaxed">Experience streamlined car rentals through our C++ based system, engineered using object-oriented programming for a user-friendly and efficient interface.</p>
+              <p class="leading-relaxed">Experience streamlined car rentals through our C++ based system, engineered using object-oriented programming for a user-friendly and efficient interface. Get your order now!</p>
             </div>
           </div>
         </div>
@@ -283,7 +286,7 @@
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">C++ and Data Structures</h2>
               <h1 class="title-font text-lg font-medium text-white mb-3">Plagiarism Detetector</h1>
-              <p class="leading-relaxed">Elevate content integrity using our C++ based Plagiarism Detector, fortified by advanced data structures. Uncover originality with precision and efficiency in our plagiarism detection system.</p>
+              <p class="leading-relaxed">Elevate content integrity using our C++ based Plagiarism Detector, fortified by advanced data structures. Uncover originality with precision and efficiency in our plagiarism detection system. Get your order now!</p>
             </div>
           </div>
         </div>
@@ -303,7 +306,7 @@
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">Flutter and Dart</h2>
               <h1 class="title-font text-lg font-medium text-white mb-3">CGPA Calculator</h1>
-              <p class="leading-relaxed">Navigate academic success effortlessly with our CGPA Calculator app, meticulously crafted using the Flutter framework. Efficiency and stability is more powerfull due to Flutter and dart mixture.</p>
+              <p class="leading-relaxed">Navigate academic success effortlessly with our CGPA Calculator app, meticulously crafted using the Flutter framework. Efficiency and stability is more powerfull due to Flutter and dart mixture. Get your order now!</p>
             </div>
           </div>
         </div>
@@ -516,10 +519,14 @@
 <!--Footer Starts-->
 
 <footer class="text-gray-400 bg-gray-900 body-font">
-    <div class="divider-container">
-        <img src="images/logo.png" style="height: 10%; width: 10%;">
-        <h1 class="text-lg md:text-xl lg:text-2xl text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">T-Dev Solutions</h1>
-    </div>
+  <div class="divider-container flex items-center">
+    <img src="images/logo.png" class="h-20 sm:h-10 lg:h-32 w-30 sm:w-20 lg:w-32" alt="Logo">
+    <span class="mx-2 text-gray-600">
+        <span class="h-10 w-0.5 inline-block bg-gray-600"></span>
+    </span>
+    <h1 class="text-lg md:text-xl lg:text-2xl text-gray-600 pl-4">T-Dev Solutions</h1>
+</div>
+
 <br>
     <div class="divider-container">
         <a class="text-gray-400" href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
@@ -541,16 +548,15 @@
         </a>
       </div>
 
-    <div class="divider-container">
-        <p class="text-base md:text-lg text-gray-600 sm:ml-4 sm:pl-4">
-            Copyright &copy;
+      <div class="divider-container text-center">
+        <p class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl">
+            <br>Copyright &copy;
             <script>
                 document.write(new Date().getFullYear());
-            </script> All rights reserved | Powered by T-Dev Solutions
+            </script> All rights reserved | Powered by TDevSolutions<br><br>
         </p>
-        
-      <br><br><br><br><br><br>
     </div>
+    
   </footer>
   
   <!--Footer Ends-->
